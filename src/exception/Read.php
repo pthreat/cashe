@@ -1,6 +1,6 @@
 <?php
 
-	namespace stange\fbsucker\cache\exception{
+	namespace stange\caching\cashe\exception{
 
 		class Read extends \Exception{
 		}

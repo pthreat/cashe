@@ -1,11 +1,11 @@
 <?php
 
-	namespace stange\fbsucker\cache{
+	namespace stange\caching\cashe{
 
-		use \stange\fbsucker\iface\Cache						as	CacheInterface;
-		use \stange\fbsucker\cache\exception\NotFound	as	NotFoundException;
-		use \stange\fbsucker\cache\exception\Read			as	ReadException;
-		use \stange\fbsucker\cache\exception\Save			as	WriteException;
+		use \stange\caching\cashe\iface\Cache				as	CacheInterface;
+		use \stange\caching\cashe\exception\NotFound		as	NotFoundException;
+		use \stange\caching\cashe\exception\Read			as	ReadException;
+		use \stange\caching\cashe\exception\Save			as	WriteException;
 
 		use \stange\logging\Slog;
 
@@ -13,11 +13,10 @@
 
 			private	$error		=	NULL;
 			private	$entryPoint	=	NULL;
-			private	$log			=	NULL;
 
 			/** Provide logging capabilities to this class **/
 
-			use \stange\fbsucker\traits\Loggable;
+			use \stange\logging\slog\traits\Loggable;
 
 			public function __construct(Array $params=Array()){
 

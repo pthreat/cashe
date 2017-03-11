@@ -4,9 +4,9 @@
 	 * File Cache Adapter
 	 */
 
-	namespace stange\fbsucker\cache\adapter{
+	namespace stange\caching\cashe\adapter{
 
-		use \stange\fbsucker\cache\Adapter	as	AbstractCacheAdapter;
+		use \stange\caching\cashe\Adapter	as	AbstractCacheAdapter;
 
 		class File extends AbstractCacheAdapter{
 
